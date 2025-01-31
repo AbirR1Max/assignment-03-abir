@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
-        <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
     <style>
         .font-sora {
             font-family: "Sora", serif;
@@ -24,13 +24,14 @@
             font-family: "ADLaM Display", serif;
             font-weight: 400;
             font-style: normal;
+            line-height: normal;
         }
     </style>
 </head>
 
-<body class="overflow-x-hidden font-sora px-[4.2%] lg:px-[8.75%]  bg-[#FFF9F4]">
-    <header>
-        <div class="navbar bg-[#FFF9F4]">
+<body class="min-h-screen overflow-x-hidden font-sora   bg-[#FFF9F4]">
+    <header class="border-b border-black md:border-0  ">
+        <div class="navbar bg-[#FFF9F4] px-[4.2%] lg:px-[8.75%]">
             <div class="navbar-start">
                 <div class="flex gap-2 items-center">
                     <img src="assets/logo-header.png" alt="">
@@ -74,29 +75,31 @@
             </div>
         </div>
     </header>
-    <main>
-        <div
-  class="hero"
-  style="background-image: url('assets/cat-big.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  ">
-  
-  <div class="hero-content text-neutral-content text-left">
-    <div class="w-full md:w-1/2">
-      <h1 class="mb-5 text-5xl text-[#111] adlam-display-regular font-bold">Pamper Your Pet, Because They Deserve the Best</h1>
-      <p class="mb-5">
-        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
-      </p>
-      <button class="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
-    </main>
-    <footer>
+    <div class=" px-[4.2%] lg:px-[8.75%]">
+        
+        <main>
+            <div class="hero pt-[32px] md:py-[1px] w-[350px] md:w-full md:h-[700px]" style="background-image: url('assets/cat-big.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          ">
 
-    </footer>
+                <div class="text-neutral-content text-left md:justify-start md:w-full">
+                    <div class="w-full md:w-1/2 pt-1 pb-[128px]">
+                        <h1 class="mb-5 text-3xl font-normal md:text-5xl text-[#111] adlam-display-regular">Pamper Your Pet, Because
+                            They Deserve the Best</h1>
+                        <p class="mb-5 text-xl md:text-[20px] text-black/[0.7]">
+                            Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
+                            and make tails wag with joy!
+                        </p>
+                        <a class="btn text-[#111] bg-[#FFDC26] border-none hover:text-[white]">Find a pet</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
 </body>
 
 </html>
