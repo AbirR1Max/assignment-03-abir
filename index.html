@@ -29,13 +29,13 @@
     </style>
 </head>
 
-<body class="min-h-screen overflow-x-hidden font-sora   bg-white">
+<body class="min-h-screen overflow-x-hidden font-sora   bg-white ">
     <header class="border-b border-black md:border-0  ">
-        <div class="navbar bg-[#FFF9F4] px-[4.2%] lg:px-[8.75%]">
+        <div class="navbar bg-[#FFF9F4] px-[4.2%] lg:px-[8.75%] lg:py-4">
             <div class="navbar-start">
                 <div class="flex gap-2 items-center">
                     <img src="assets/logo-header.png" alt="">
-                    <h2 class="text-2xl text-[#111]">
+                    <h2 class="hidden lg:flex text-2xl text-[#111]">
                         Browse<span class="text-[#FFDC26]">4</span>Pets
                     </h2>
                 </div>
@@ -47,8 +47,24 @@
                     <li><a>Contact us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end ">
-                <div class="flex gap-2 hidden lg:flex">
+            <div class="navbar-end">
+                <div class="gap-2 hidden lg:flex">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </div>
+                    </button>
                     <a class="btn btn-outline text-[#111] border-[#FFDC26] hover:bg-yellow-200">Login</a>
                     <a class="btn text-[#111] bg-[#FFDC26] border-none hover:text-[white]">Register</a>
                 </div>
@@ -69,7 +85,23 @@
                             <a
                                 class="btn btn-outline text-[#111] border-[#FFDC26] bg-white hover:bg-yellow-200">Login</a>
                             <a class="btn text-[#111] bg-[#FFDC26] border-none hover:text-[white]">Register</a>
-                        </div>
+                            <div>
+                                <button class="btn btn-ghost btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn btn-ghost btn-circle">
+                                    <div class="indicator">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                        </svg>
+                                    </div>
+                            </div>
                     </ul>
                 </div>
             </div>
@@ -86,10 +118,10 @@
 
                 <div class="text-neutral-content text-left md:justify-start md:w-full">
                     <div class="w-full md:w-1/2 pt-1 pb-[128px]">
-                        <h1 class="mb-5 text-3xl font-normal md:text-5xl text-[#111] adlam-display-regular">Pamper Your
-                            Pet, Because
-                            They Deserve the Best</h1>
-                        <p class="mb-5 text-xl md:text-[20px] text-black/[0.7]">
+                        <h1 class="mb-5 text-3xl font-normal md:text-5xl text-[#111] adlam-display-regular ">Pamper Your
+                            Pet, <br> Because
+                            They Deserve <br> the Best</h1>
+                        <p class="mb-5 text-xl md:text-[20px] text-[#111]/70">
                             Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now
                             and make tails wag with joy!
                         </p>
@@ -98,10 +130,10 @@
                 </div>
             </div>
             <div class="py-14 md:py-36 flex flex-col gap-6">
-                <h2 class="text-2xl md:text-4xl">
+                <h2 class="adlam-display-regular text-2xl md:text-4xl">
                     Browse By Categories
                 </h2>
-                <div class="card-section w-full grid grid-cols-2 gap-3 lg:grid-cols-6">
+                <div class="card-section w-full grid grid-cols-2 gap-6 lg:grid-cols-6">
                     <div class="card bg-[#F9DF8A] w-full text-lg text-black">
                         <figure class="px-10 pt-10">
                             <div class="p-8 bg-white mask mask-circle">
@@ -177,7 +209,7 @@
                 </div>
             </div>
             <div class="flex flex-col gap-8 bg-[#FFF9F4] pb-[60px]">
-                <h2>
+                <h2 class="adlam-display-regular text-2xl lg:text-4xl">
                     Trending Pet Products
                 </h2>
                 <div class="flex flex-col gap-6 lg:flex-row w-full flex-auto ">
@@ -191,130 +223,323 @@
                         <a class="btn text-[#111] bg-white border-none hover:text-[white] mt-5">Shop Now</a>
                     </div>
                     <div class="w-auto grid grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-6">
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] h-lg:[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] h-lg:[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] h-lg:[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="flex jus bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] lg:h-[86px]">
                                 <img class="w-full" class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] lg:h-[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] lg:h-[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] lg:h-[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
+                        <div
+                            class="flex gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px]">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] lg:h-[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
-                        <div class="hidden gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px] lg:visible lg:flex">
+                        <div
+                            class="hidden gap-3 bg-white border-[0.6px] border-black/0.1 py-[12px] px-[10px] rounded-md lg:w-[275px] lg:h-[118px] lg:visible lg:flex">
                             <div class="bg-slate-400 px-3 py-3 rounded-lg lg:w-[86px] lg:h-[86px]">
                                 <img class="w-full" src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="flex flex-col justify-center">
-                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                                  </svg>
-                                  <p class="text-[9px]">4.5</p></div>
-                                  <h4 class="text-sm font-bold">Pet Bed</h4>
-                                  <p class="text-xs">$39.99</p>
+                                <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                    </svg>
+                                    <p class="text-[9px]">4.5</p>
+                                </div>
+                                <h4 class="text-sm font-bold">Pet Bed</h4>
+                                <p class="text-xs">$39.99</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <section class="py-36 w-auto">
+                <div>
+                  <h1 class="adlam-display-regular text-4xl mb-7">Everyday Low Price</h1>
+                <div class="flex flex-col lg:flex-row gap-6">
+                  <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg flex justify-center">
+                    <!-- content -->
+                     <div class="px-12 py-11 lg:my-32 lg:ml-20 w-1/2">
+                      <h2 class="hidden lg:flex text-3xl">Under Price</h2>
+                      <h1 class="font-adlam text-3xl font-semibold mt-3 mb-2">Pet Grooming Mitt</h1>
+                      <p class="hidden lg:flex text-white text-xl font-medium mb-4">(Easy Hair Removal)</p>
+                      <h1 class="font-adlam text-5xl font-semibold">$7.99</h1>
+                     </div>
+                     <!-- image -->
+                      <div class="pt-20">
+                        <img src="assets/cute-dog-mid.png" alt="">
+                      </div>
+                  </div>
+                  <div class="bg-gradient-to-tl from-[#F9DF8A] to-[#FFF9F4] rounded-lg flex justify-center">
+                    <!-- content -->
+                     <div class="mt-12 text-left ml-12">
+                      <h1 class="font-adlam text-3xl font-semibold mb-2">T-Shirts For Dogs</h1>
+                      <h1 class="font-adlam text-5xl font-semibold text-primarycolor">$7.99</h1>
+                     </div>
+                     <!-- image -->
+                      <div class="pt-20">
+                        <img src="assets/cute-pet-mid.png" alt="">
+                      </div>
+                  </div>
+                </div>
+                </div>
+                
+               </section>
+            <div class="flex flex-col gap-5 items-start rounded-lg w-full py-16">
+                <h2 class="adlam-display-regular text-2xl lg:text-4xl">FAQ:</h2>
+                <div class="collapse bg-slate-500 w-auto h-auto">
+                    <input type="checkbox" />
+                    <div class="collapse-title text-xl font-medium">1. What are the essential products I need for my cat?</div>
+                    <div class="collapse-content">
+                        <p class="text-xl">To keep your cat happy and healthy, you’ll need:</p> <br>
+
+                        
+                                1. A high-quality cat food (wet or dry) <br>
+                                1. A litter box with clumping or non-clumping litter <br>
+                                1. A scratching post or pad <br>
+                                1. A comfortable bed <br>
+                                1. Food and water bowls (preferably stainless steel or ceramic) <br>
+                                1. Toys for mental stimulation <br>
+                                1. A cat carrier for travel or vet visits
+                        
+                    </div>
+                  </div>
+                <div class="collapse bg-slate-500 w-4/6 h-auto">
+                    <input type="checkbox" />
+                    <div class="collapse-title text-xl font-medium">2. How do I choose the right cat food?</div>
+                    <div class="collapse-content">
+                      <p>Look for food that is high in animal-based protein, low in carbohydrates, and free from artificial additives. Consider your cat’s age, breed, and any dietary restrictions when selecting food. Always consult your vet for the best recommendations.</p>
+                    </div>
+                  </div>
+                <div class="collapse bg-slate-500 w-4/6 h-auto">
+                    <input type="checkbox" />
+                    <div class="collapse-title text-xl font-medium">3. How often should I clean my cat’s litter box?</div>
+                    <div class="collapse-content">
+                      <p>You should scoop out waste daily and completely change the litter once a week (or more often if needed). A clean litter box prevents odor and keeps your cat happy.</p>
+                    </div>
+                  </div>
+            </div>
         </main>
-        <footer>
-        </footer>
+
     </div>
-</body>  
+    <div class="flex">
+        <div class="hidden w-full mt-6 lg:flex ">
+            <div
+                class="origin-bottom mb-[-12%] border-2 flex w-full bg-[#FFF9F4] rounded-lg text-center mx-[4%] p-[5%] items-center gap-12">
+                <img class="w-56" src="assets/cute-pet-mid.png" alt="">
+                <div class="text-left flex flex-col items-left gap-6 w-full">
+                    <h2 class="adlam-display-regular text-4xl">Get Pawsome News!</h2>
+                    <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="email" placeholder="Enter email...."
+                        class="input input-bordered input-warning w-full max-w-lg bg-white" />
+                    <div><a
+                            class="btn text-sm text-[#111] bg-[#FFDC26] border-none px-6 py-2 hover:text-[white]">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order-4 flex flex-col items-center  mx-4 origin-bottom mb-[-60%] lg:hidden">
+        <div class="flex flex-col items-center gap-6 bg-[#FFF9F4] w-full rounded-lg text-center p-[10%] lg:hidden">
+            <img class="w-[190px]" src="assets/cute-pet-mid.png" alt="">
+            <h2 class="text-2xl">Get Pawsome News!</h2>
+            <p class="text-lg">Exclusive training tips, ticks, product deals and more.</p>
+            <input type="email" placeholder="Enter email...."
+                class="input input-bordered input-warning w-full max-w-xs bg-white" />
+            <a class="btn text-sm text-[#111] bg-[#FFDC26] border-none px-6 py-2 hover:text-[white]">Subscribe</a>
+
+        </div>
+
+
+    </div>
+    <footer class="order-2 bg-[#FFDC2680] pt-80 lg:pt-52">
+
+        <div class="flex flex-col items-center w-full justify-around">
+
+
+
+            <div class="w-full flex flex-col gap-9 px-4 py-16 lg:flex-row lg:items-end lg:flex lg:justify-between lg:px-[10%]">
+                <div>
+                    <div class="logo-section">
+                        <div><img src="assets/logo-footer.png" alt="logo-footer"></div>
+                        <div>
+                            <h2 class="text-2xl text-[#111]">
+                                Browse<span class="text-[#FFDC26]">4</span>Pets
+                            </h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-black/70">Discover a world of treats, toys, and essentials handpicked for your
+                            furry friends</p>
+                    </div>
+                </div>
+                <div>
+                    <ul class="menu menu px-1 text-[#111]">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="icon-section">
+                    <nav>
+                        <h3>Follow Us</h3>
+                        <div class="flex gap-4">
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="fill-current">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="fill-current">
+                                    <path
+                                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="fill-current">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
